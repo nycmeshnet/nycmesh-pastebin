@@ -20,3 +20,6 @@ env:
 hostname: paste-dev.mesh.nycmesh.net
 persistence:
   storageClass: "longhorn"
+service:
+  type: NodePort
+  port: 30087
