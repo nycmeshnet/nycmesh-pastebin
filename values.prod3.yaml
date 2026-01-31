@@ -1,0 +1,22 @@
+secret:
+  create: true
+  data:
+    MICROBIN_ADMIN_USERNAME: admin
+env:
+  - name: MICROBIN_NO_LISTING
+    value: "true"
+  - name: MICROBIN_READONLY
+    value: "true"
+  - name: MICROBIN_DISABLE_UPDATE_CHECKING
+    value: "true"
+  - name: MICROBIN_DISABLE_TELEMETRY
+    value: "true"
+  - name: MICROBIN_QR
+    value: "true"
+  - name: MICROBIN_WIDE
+    value: "true"
+  - name: MICROBIN_HIDE_FOOTER
+    value: "true"
+hostname: paste.mesh.nycmesh.net
+persistence:
+  storageClass: "longhorn"
