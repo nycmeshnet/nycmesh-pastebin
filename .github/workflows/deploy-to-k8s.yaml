@@ -45,7 +45,7 @@ jobs:
           --kube-apiserver https://${{ secrets.SSH_TARGET_IP }}:6443 \
           -n ${{ vars.APP_NAMESPACE }} \
           --create-namespace ${{ vars.APP_NAMESPACE }} \
-          microbin \
+          microbin/microbin \
           -f values.${{ inputs.environment }}.yaml \
           --set secret.data.MICROBIN_ADMIN_PASSWORD="${{ secrets.MICROBIN_ADMIN_PASSWORD }}" \
           --set secret.data.MICROBIN_UPLOADER_PASSWORD="${{ secrets.MICROBIN_UPLOADER_PASSWORD }}"
