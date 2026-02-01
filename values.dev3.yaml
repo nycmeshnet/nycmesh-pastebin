@@ -22,4 +22,4 @@ persistence:
   storageClass: "longhorn"
 service:
   type: NodePort
-  port: 30087
+  nodePort: 30087
